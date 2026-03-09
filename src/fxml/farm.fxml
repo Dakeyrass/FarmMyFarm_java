@@ -1,30 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FarmController">
    <children>
-      <GridPane fx:id="land" layoutX="106.0" layoutY="235.0" prefHeight="175.0" prefWidth="249.0">
+      <GridPane fx:id="land" layoutX="170.0" layoutY="138.0" prefHeight="351.0" prefWidth="522.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="116.0" style="-fx-background-color: green" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="111.0" style="-fx-background-color: green" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="116.0" style="-fx-background-color: green" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="117.0" style="-fx-background-color: green" />
-            <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="110.0" style="-fx-background-color: green" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: green" GridPane.columnIndex="3" />
          </children>
       </GridPane>
+      <Button layoutX="21.0" layoutY="563.0" mnemonicParsing="false" onAction="#chooseMais" prefHeight="43.0" prefWidth="95.0" text="🌽" />
+      <Button layoutX="136.0" layoutY="563.0" mnemonicParsing="false" onAction="#choosePotatoe" prefHeight="43.0" prefWidth="95.0" text="🥔​" />
+      <Button layoutX="753.0" layoutY="563.0" mnemonicParsing="false" onAction="#openMarket" prefHeight="43.0" prefWidth="77.0" text="MARKET" />
+      <HBox layoutX="676.0" layoutY="26.0" prefHeight="44.0" prefWidth="112.0">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/coin.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="moneyLabel" prefHeight="44.0" prefWidth="73.0" text=" 0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="21.0" layoutY="38.0" prefHeight="200.0" prefWidth="129.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="106.0">
+               <children>
+                  <Label fx:id="labelPotatoe" layoutX="15.0" layoutY="45.0" prefHeight="43.0" prefWidth="95.0" text="🥔 Potatoes: 0" />
+                  <Label fx:id="labelMais" layoutX="15.0" layoutY="78.0" prefHeight="43.0" prefWidth="112.0" text="🌽 Maïs: 0" />
+                  <Label layoutX="15.0" layoutY="11.0" prefHeight="30.0" prefWidth="77.0" text="VEGETABLES" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="21.0" layoutY="270.0" prefHeight="200.0" prefWidth="129.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="106.0">
+               <children>
+                  <Label layoutX="22.0" layoutY="14.0" prefHeight="30.0" prefWidth="61.0" text="SEED" />
+                  <Label fx:id="labelPotatoeSeed" layoutX="8.0" layoutY="46.0" prefHeight="43.0" prefWidth="95.0" text="Potatoes: 0" />
+                  <Label fx:id="labelMaisSeed" layoutX="8.0" layoutY="78.0" prefHeight="43.0" prefWidth="112.0" text="Maïs: 0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
    </children>
 </Pane>

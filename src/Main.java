@@ -18,7 +18,7 @@ public class Main extends Application {
 
         Scene scene = new Scene(root);
 
-        primaryStage.setTitle("JavaFX Test");
+        primaryStage.setTitle("Farm My Farm");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

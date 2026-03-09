@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarketController">
+   <children>
+      <HBox layoutX="567.0" layoutY="24.0" prefHeight="44.0" prefWidth="116.0">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/coin.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="moneyLabelMarket" prefHeight="44.0" prefWidth="72.0" text=" 0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="sellMais" layoutX="392.0" layoutY="95.0" mnemonicParsing="false" onAction="#sellMais" prefHeight="44.0" prefWidth="83.0" text="MAIS" />
+      <Button fx:id="sellPotatoe" layoutX="291.0" layoutY="95.0" mnemonicParsing="false" onAction="#sellPotatoe" prefHeight="44.0" prefWidth="83.0" text="POTATOE" />
+      <Label layoutX="533.0" layoutY="95.0" prefHeight="66.0" prefWidth="156.0" text="SELL">
+         <font>
+            <Font name="04b 30" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="267.0" prefHeight="66.0" prefWidth="156.0" text="BUY">
+         <font>
+            <Font name="04b 30" size="35.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="36.0" layoutY="46.0" prefHeight="200.0" prefWidth="129.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="106.0">
+               <children>
+                  <Label fx:id="labelPotatoeMarket" layoutX="15.0" layoutY="45.0" prefHeight="43.0" prefWidth="95.0" text="Potatoes: 0" />
+                  <Label fx:id="labelMaisMarket" layoutX="15.0" layoutY="78.0" prefHeight="43.0" prefWidth="112.0" text="Maïs: 0" />
+                  <Label layoutX="15.0" layoutY="11.0" prefHeight="30.0" prefWidth="77.0" text="VEGETABLES" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="36.0" layoutY="258.0" prefHeight="200.0" prefWidth="129.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="106.0">
+               <children>
+                  <Label layoutX="22.0" layoutY="14.0" prefHeight="30.0" prefWidth="61.0" text="SEED" />
+                  <Label fx:id="labelPotatoeSeedM" layoutX="8.0" layoutY="46.0" prefHeight="43.0" prefWidth="95.0" text="Potatoes: 0" />
+                  <Label fx:id="labelMaisSeedM" layoutX="8.0" layoutY="78.0" prefHeight="43.0" prefWidth="112.0" text="Maïs: 0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="sellMais1" layoutX="392.0" layoutY="267.0" mnemonicParsing="false" onAction="#buySeedMais" prefHeight="44.0" prefWidth="83.0" text="MAIS SEED" />
+   </children>
+</Pane>
